@@ -1,0 +1,11 @@
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot-news
+Allow: /
+
+User-agent: *
+Disallow: /
