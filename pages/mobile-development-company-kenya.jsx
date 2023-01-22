@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { Mobile_Hero } from "../components/Home/assets";
+import { Mobile_Hero } from "../assets/assets";
 import { BsApple } from "react-icons/bs";
 import { DiAndroid } from "react-icons/di";
 

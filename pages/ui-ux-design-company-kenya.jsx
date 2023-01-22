@@ -9,7 +9,7 @@ import {
   next_icon,
   bootstrap_icon,
   tailwind_icon,
-} from "../components/Home/assets";
+} from "../assets/assets";
 import Image from "next/image";
 import Header from "../components/Header/Header";
 import { BsApple } from "react-icons/bs";

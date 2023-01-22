@@ -5,7 +5,7 @@ import Industries from '../components/Industries/Industries'
 import Header from "../components/Header/Header";
 import GrowTogether from "../components/GrowTogether/GrowTogether";
 import Footer from '../components/Footer/Footer'
-import { Web } from "../components/Home/assets";
+import { Web } from "../assets/assets";
 import { TiTick } from "react-icons/ti";
 import Zoom from 'react-reveal/Zoom';
 import Head from "next/head";
@@ -61,7 +61,7 @@ const Development = () => {
             What's Different about Softleaf Applications?
            
           </div>
-          <p className=" text-slate-600 mx-6  text-sm leading-8 md:mx-32 md:text-lg  md:text-center   ">
+          <p className=" text-slate-600 mx-6  text-sm leading-8 md:mx-32 md:text-lg  md:text-center max-w-2xl  ">
           We give an amazing shaping to your dream business with our ultimate  website development services. Our web development team can build the responsive web applications and websites as per your requirement,
            within your budget and the given deadline, we want you to standout from the rest, just like us.
           </p>
