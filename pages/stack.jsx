@@ -17,7 +17,7 @@ import {
   css_icon,
   html_icon,
   firebase_icon,
-} from "../components/Home/assets";
+} from "../assets/assets";
 import Image from 'next/image'
 import Head from "next/head";
 
