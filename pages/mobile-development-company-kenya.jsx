@@ -126,7 +126,7 @@ const Mobile = () => {
         </div>
       </div>
       <section className=" bg-mobile-development-dot bg-repeat py-24">
-       \   <div className="flex flex-col items-center space-y-4 md:space-y-0  justify-center md:flex-row mx-auto md:space-x-12 px-12 ">
+       \   <div className="flex flex-col items-center space-y-4 md:space-y-0  justify-center md:flex-row md:mx-auto md:space-x-12 mx-4 ">
           <div className="flex flex-col items-center justify-center mt-12  space-y-6 max-w-lg  ">
             <h1 className="   text-3xl font-light text-slate-800 text-center   ">
               <span className="font-bold text-4xl text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">

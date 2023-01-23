@@ -142,10 +142,10 @@ const WebDesign = () => {
       </section>
 
       <div>
-      <div className="font-extrabold text-2xl text-slate-800 text-center">
+      <div className="font-extrabold text-xl text-slate-800 text-center mx-auto" >
           What makes us unique as a UX design agency
         </div>
-        <p className=" mt-4 max-w-lg text-slate-600 leading-7 text-center md:mx-auto mx-4  ">
+        <p className=" mt-4 max-w-lg text-slate-600 leading-7 tex-sm md:text-base text-center md:mx-auto mx-4  ">
           We follow a clear design process which makes us standout when it comes
           to UX design. Our design team offers UI/UX design services to help you
           build an interactive and high quality product quickly.
