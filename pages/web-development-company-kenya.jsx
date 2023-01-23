@@ -70,13 +70,13 @@ const Development = () => {
         </div>
       </section>
       <section className="mb-24">
-        <div className="flex flex-col md:flex-row md:mx-12">
-          <div className=" md:min-w-[50%] md:mt-16 md:h-[70%]  ">
+        <div className="flex flex-col items-center justify-center md:flex-row md:px-12 mx-auto">
+          <div className=" max-w-2xl max-h-2xl md:mt-16   ">
           <Zoom>  <Image src={Web}></Image> </Zoom>
             
           </div>
 
-          <div className="flex flex-col space-y-4 md:mt-12">
+          <div className="flex flex-col space-y-4 md:mt-12 max-w-lg">
           <div className="mb-6  md:text-4xl text-3xl mx-6 md:mx-auto  text-slate-900 font-light   ">
               Customized web applications for all platforms and verticals
             </div>
@@ -128,8 +128,8 @@ const Development = () => {
      
 
       <section className=" bg-software-development-dot  md:pb-24" id="hero">
-        <div className="flex flex-col items-center justify-evenly px-6 mx-auto m md:flex-row pt-24 ">
-          <div className="flex flex-col md:ml-24 ">
+        <div className="flex flex-col items-center justify-center px-6 md:px-32 mx-auto  md:flex-row pt-24 ">
+          <div className="flex flex-col  ">
             <h1 className=" text-4xl font-sans font-bold  text-slate-800 text-center md:text-6xl md:text-left">
               We make your Business stand out
             </h1>
@@ -153,7 +153,7 @@ const Development = () => {
               </a>
             </div>
           </div>
-          <div className="relative z-20 md:w-[100%] ">
+          <div className="relative z-20 max-w-5xl">
          <Zoom>   <Image src={Dashboard2_img} alt="" /></Zoom>
           </div>
         </div>

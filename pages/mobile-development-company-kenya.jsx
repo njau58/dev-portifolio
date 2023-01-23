@@ -81,8 +81,8 @@ const Mobile = () => {
         <div className=" absolute bg-theme-dark-blue opacity-80 inset-y-0 z-10 w-full h-full"></div>
       </section>
 
-      <div className="relative z-10  md:w-[90%] -mt-24 p-16 bg-white shadow-lg md:mx-auto rounded-t-2xl">
-        <div className="flex flex-col  md:flex-row space-y-12 md:space-y-auto">
+      <div className="relative z-10  max-w-7xl -mt-24 p-16 bg-white shadow-lg md:mx-auto rounded-t-2xl">
+        <div className="flex flex-col  items-center justify-center  md:flex-row space-y-12 md:space-y-auto">
           <div className="flex flex-col mx-auto space-y-4 ">
             <div className=" text-2xl text-center  font-semibold text-slate-600">
               Vast Mobile App Development Services We Offer
@@ -126,16 +126,16 @@ const Mobile = () => {
         </div>
       </div>
       <section className=" bg-mobile-development-dot bg-repeat py-24">
-        <div className="flex flex-col mx-auto  md:flex-row md:pt-16 md:mx-12   ">
-          <div className="flex flex-col mt-12  space-y-6 md:w-2/3  mx-2 md:mx-auto ">
-            <h1 className="   text-3xl font-light text-slate-800 text-center  md:text-left ">
+       \   <div className="flex flex-col items-center space-y-4 md:space-y-0  justify-center md:flex-row mx-auto md:space-x-12 px-12 ">
+          <div className="flex flex-col items-center justify-center mt-12  space-y-6 max-w-lg  ">
+            <h1 className="   text-3xl font-light text-slate-800 text-center   ">
               <span className="font-bold text-4xl text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                 {" "}
                 SoftLeaf {" "}
               </span>{" "}
               Mobile Application Development
             </h1>
-            <p className=" text-center text-slate-600  md:text-left leading-8  ">
+            <p className=" text-center text-slate-600   leading-7 text-sm md:text-base  ">
               Being the top mobile app development company, we work with the
               finest resources, tried & tested methods, out-of-the-box ideas,
               and maintain top-class development quality. With this, we deliver
@@ -156,13 +156,13 @@ const Mobile = () => {
               <Button onClick={contactModalToggle} label="Lets Talk" extra=" mb-24  p-3 px-8  p-3 px-8  "></Button>
             </div>
           </div>
-          <div className="relative z-20 md:max-w-6xl ">
+          <div className="relative  max-w-lg ">
           <Zoom>  <Image src={Mobile_Hero} alt="" /> </Zoom>
           </div>
         </div>
       </section>
-      <section className="grid md:grid-cols-3 grid-rows-1 md:space-x-4 mx-2 py-24 space-y-12 md:space-y-0">
-        <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 0.8 }}>
+      <section className="grid md:grid-cols-3 grid-rows-1 md:space-x-4 md:mx-auto py-24 space-y-12 md:space-y-0 max-w-7xl mx-4 ">
+        <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 0.8 }} >
           <div className=" relative flex items-center justify-center mx-auto py-12 rounded-lg bg-mobile-bg bg-center bg-no-repeat">
             <div className="flex flex-col space-y-2 z-20 justify-center items-center">
               <div className="text-7xl text-white">

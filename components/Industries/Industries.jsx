@@ -68,7 +68,7 @@ const Industries = ({sectionBg, industryBg, descColor}) => {
             return (
               <div
                 key={idx}
-                className={`${industryBg}`.concat(" pl-6 flex items-start space-y-6 justify-start text-left rounded-sm  w-full h-full flex-col")}
+                className={`${industryBg}`.concat(" pl-6 flex items-start space-y-6 justify-start text-left rounded-sm  w-full h-full flex-col max-w-lg")}
               >
                 <div className="text-white  text-5xl mt-6">
                   {industry.icon}

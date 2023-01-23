@@ -73,7 +73,7 @@ const WebDesign = () => {
       <section className="    bg-fixed bg-ux-ui-bg   bg-cover bg-no-repeat">
         <div className=" pt-64   ">
           <div className="flex flex-col items-center justify-center mx-4  pb-12 space-y-7   ">
-            <h1 className="  text-2xl text-center mx-9 md:mx-72   text-slate-200 ">
+            <h1 className="  text-2xl text-center mx-9 max-w-lg  text-slate-200 ">
               We handcraft attractive and engaging UI/UX designs that are
               exceptional and customer-centric.
             </h1>
@@ -107,14 +107,14 @@ const WebDesign = () => {
       </section>
 
       <section className=" py-9">
-        <div className="flex flex-col md:flex-row justify-center mx-6 md:space-x-16 items-center space-y-12 md:space-y-0  my-9">
-          <div className="flex flex-col space-y-4 items-start md:w-[40%]">
-            <div className="font-extrabold text-2xl text-slate-800">
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-12 md:space-y-0  my-9 mx-auto">
+          <div className="flex flex-col space-y-4 items-center justify-center max-w-lg mx-4 md:mx-auto">
+            <div className="font-extrabold text-2xl text-slate-800 text-center">
               Improve your brand value by our creative and unique UI/UX design
               solutions
             </div>
 
-            <p className="text-slate-600 md:text-base leading-8 pb-6">
+            <p className="text-slate-600 md:text-base text-sm leading-7 pb-6 text-center">
               {" "}
               We craft amazing and responsive user experience designs that meet
               our client’s business goals and vision. We create innovative and
@@ -131,7 +131,7 @@ const WebDesign = () => {
                 
           </div>
 
-          <div className=" md:w-[40%] flex  ">
+          <div className=" max-w-lg ">
             {" "}
             <Zoom>
               {" "}
@@ -140,23 +140,30 @@ const WebDesign = () => {
           </div>
         </div>
       </section>
-      {/* USER RESEARCH */}
-      <section className="pt-12">
-        <div className="font-light text-2xl text-slate-800 text-center">
+
+      <div>
+      <div className="font-extrabold text-2xl text-slate-800 text-center">
           What makes us unique as a UX design agency
         </div>
-        <p className=" mt-4 mx-[5%] md:mx-[20%] text-slate-600 leading-8 text-center ">
+        <p className=" mt-4 max-w-lg text-slate-600 leading-7 text-center md:mx-auto mx-4  ">
           We follow a clear design process which makes us standout when it comes
           to UX design. Our design team offers UI/UX design services to help you
           build an interactive and high quality product quickly.
         </p>
+      </div>
+
+      {/* USER RESEARCH */}
+
+
+      <section className="pt-12">
+        
         <div className="flex flex-col md:flex-row justify-center mx-6 md:space-x-16 items-center space-y-12 md:space-y-0  my-9">
-          <div className="flex flex-col space-y-4 items-start md:w-[40%]">
-            <div className="font-extrabold text-xl text-slate-800">
+          <div className="flex flex-col space-y-4 items-start ">
+            <div className="font-extrabold text-xl text-slate-800 mx-auto">
               User Research
             </div>
 
-            <p className="text-slate-600 leading-8 pb-6">
+            <p className="text-slate-600 leading-7 text-sm md:text-base pb-6 max-w-lg text-center mx-4 md:mx-auto">
               {" "}
               User research is the foundation for effective and sustainable
               design solutions. We conduct user research by analysing your
@@ -164,10 +171,10 @@ const WebDesign = () => {
             </p>
            
 
-            <Button onClick={contactModalToggle} label="Get A free UI/UX consultation " extra="px-12 py-3 "></Button>
+            <Button onClick={contactModalToggle} label="Get A free UI/UX consultation " extra="px-12 py-3 mx-auto "></Button>
           </div>
 
-          <div className=" md:w-[40%] flex  ">
+          <div className=" max-w-lg flex  ">
             {" "}
             <Zoom>
               {" "}
@@ -178,13 +185,13 @@ const WebDesign = () => {
       </section>
       {/*  USER EXPERIENCE DESIGN  USER INTERFACE DESIGN */}
       <section>
-        <div className="flex flex-col items-center space-y-4 md:space-y-0 md:space-x-12 justify-between md:flex-row mx-[5%] ">
-          <div className="flex flex-col space-y-4 items-start md:w-[40%]  ">
-            <div className="font-extrabold text-xl text-slate-800">
+        <div className="flex flex-col items-center space-y-4 md:space-y-0  justify-center md:flex-row mx-auto md:space-x-12 px-12 ">
+          <div className="flex flex-col space-y-4 items-start   ">
+            <div className="font-extrabold text-xl text-slate-800 ">
               User Experience Design
             </div>
 
-            <p className="text-slate-600 leading-8">
+            <p className="text-slate-600 leading-7 text-sm md:text-base pb-6 max-w-lg  ">
               {" "}
               We create digital experiences that are clear, purposeful and
               visually enjoyable for the end-users. We use best techniques and
@@ -193,15 +200,15 @@ const WebDesign = () => {
           </div>
           <div>
          
-             <div className="py-12 md:py-0">  <Image src={ui_ux} alt="ux-design "></Image></div>
+             <div className="max-w-lg">  <Image src={ui_ux} alt="ux-design "></Image></div>
           
           </div>
-          <div className="flex flex-col space-y-4 items-start md:w-[40%]  ">
+          <div className="flex flex-col space-y-4 items-start   ">
             <div className="font-extrabold text-xl text-slate-800">
               User Interface Design
             </div>
 
-            <p className="text-slate-600 leading-8">
+            <p className="text-slate-600 leading-7 text-sm md:text-base max-w-lg">
               {" "}
               We offer user-friendly design services creating the top-notch
               mobile interface experience to the target audience. Our highly
@@ -213,7 +220,7 @@ const WebDesign = () => {
       {/* INTERACTION DESIGN */}
       <section className="pt-12">
         <div className="flex flex-col md:flex-row justify-center mx-6 md:space-x-16 items-center space-y-12 md:space-y-0  my-9">
-          <div className=" md:w-[40%] flex  ">
+          <div className=" max-w-lg flex  ">
             {" "}
             <Zoom>
               {" "}
@@ -221,39 +228,39 @@ const WebDesign = () => {
             </Zoom>
           </div>
 
-          <div className="flex flex-col space-y-4 items-start md:w-[40%]">
-            <div className="font-extrabold text-xl text-slate-800">
+          <div className="flex flex-col space-y-4 items-start mx-auto">
+            <div className="font-extrabold text-xl text-slate-800 mx-auto">
               Interaction Design
             </div>
 
-            <p className="text-slate-600 pb-6 leading-8">
+            <p className="text-slate-600 pb-6 leading-7 max-w-lg text-sm md:text-base text-center">
               At the heart of any design project is the target audience.We
               incorporate their requirements to come up with amazing UI/UX
               design patterns to enhance the interaction of end-users with web
               or mobile applications
             </p>
-            <Button onClick={contactModalToggle} label="Get A free UI/UX consultation " extra="px-12 py-3 "></Button>
+            <Button onClick={contactModalToggle} label="Get A free UI/UX consultation " extra="px-12 py-3 mx-auto "></Button>
           </div>
         </div>
       </section>
       {/* USABILITY TESTING */}
       <section className="pt-12">
         <div className="flex flex-col md:flex-row justify-center mx-6 md:space-x-16 items-center space-y-12 md:space-y-0  my-9">
-          <div className="flex flex-col space-y-4 items-start md:w-[40%]">
-            <div className="font-extrabold text-xl text-slate-800">
+          <div className="flex flex-col space-y-4 items-start ">
+            <div className="font-extrabold text-xl text-slate-800 mx-auto text-center">
               Usability Testing
             </div>
 
-            <p className="text-slate-600 leading-8">
+            <p className="text-slate-600 leading-7 text-sm md:text-base max-w-lg md:mx-auto mx-4 text-center ">
               With a thorough understanding of latest technologies and tools, we
               perform various quality tests to make sure that the app we design
               is free from bugs, robust and easy to use with smooth navigation.
             </p>
           
 
-            <Button onClick={contactModalToggle} label="Get A free usability  consultation " extra="px-12 py-3 "></Button>
+            <Button onClick={contactModalToggle} label="Get A free usability  consultation " extra="px-12 py-3 mx-auto "></Button>
           </div>
-          <div className=" md:w-[40%] flex  ">
+          <div className=" max-w-lg flex  ">
             {" "}
             <Zoom>
               <Image src={user_research} alt="usability"></Image>
@@ -263,10 +270,10 @@ const WebDesign = () => {
       </section>
       {/* FROTEND TECH */}
       <section className="py-24">
-        <div className="font-light text-3xl text-slate-800 text-center">
+        <div className="font-extrabold text-2xl text-slate-800 text-center">
           Frontend Development
         </div>
-        <p className="text-center mt-4 mx-[5%] md:mx-[20%] text-slate-600 leading-8">
+        <p className="text-center mt-4 max-w-lg text-slate-600 leading-7 text-sm md:text-base md:mx-auto mx-4">
           Design and development follow principles that overarch. We actualise
           these designs and aesthetics using modern cutting edge technologies
           while ensuring development of quality products for our clients.
