@@ -56,7 +56,7 @@ const Solutions = () => {
               </div>
              
             </div>
-            <div className="flex md:flex-row md:mx-auto px-2 md:px-12 md:space-x-12 flex-col  mx-6 space-y-12 md:space-y-0">
+            <div className="flex md:flex-row md:mx-auto  md:px-12 md:space-x-12 flex-col  mx-2 space-y-12 md:space-y-0">
               {solutions?.map((solution, idx) => {
                 return (
                

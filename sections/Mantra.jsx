@@ -22,7 +22,7 @@ const Mantra = () => {
                 Our Mantra...
               </div>
               <div className="flex flex-row space-x-6">
-                <FaQuoteRight className="text-8xl text-theme-primary -mt-8 -ml-9"></FaQuoteRight>
+               <div className='text-5xl p-4'><FaQuoteRight className=" text-theme-primary -mt-8 -ml-9"></FaQuoteRight></div> 
                 <p className="  text-slate-500 md:text-base tex-sm ">
                   Give your clients the earliest delivery consistent with
                   quality - whatever the inconvenience to us. Arthur C. Nielsen

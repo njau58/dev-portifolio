@@ -8,7 +8,7 @@ const Process = () => {
           Our Process
         </div>
 
-        <p className="text-center max-w-4xl mx-auto my-9 text-slate-50 md:text-base text-sm ">
+        <p className="text-center max-w-xl mx-auto my-9 text-slate-50 md:text-base text-sm ">
           As a top Kenya software development company, we provide world-class
           software development solutions using latest tools and technologies. We
           use agile methodology to ensure a close collaboration with

@@ -24,7 +24,7 @@ const Button = ({onClick,label,extra}) => {
    
 
     onClick={onClick}
-    className={`  ${extra}  bg-theme-primary text-center  font-bold  text-white text-sm  cursor-pointer rounded-lg hover:border-[1px] hover:border-theme-primary hover:text-theme-primary hover:bg-transparent`}
+    className={`  ${extra}  bg-theme-primary text-center    text-white text-sm  cursor-pointer rounded-lg hover:border-[1px] hover:border-theme-primary hover:text-theme-primary hover:bg-transparent`}
   >{
     label
   }

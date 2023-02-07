@@ -231,10 +231,10 @@ const Home = () => {
             </motion.button>
           </AnimatePresence>
         )}
-    <section className=" relative  bg-fixed    bg-gradient-to-t to-[#11345a] from-[#5258fb] via-[#11345a] rounded-br-full ">
-      <div className="flex flex-row max-w-7xl mx-auto items-center justify-center py-36 ">
+    <section className=" relative  bg-fixed    bg-gradient-to-b to-[#11345a] from-[#5258fb] via-[#11345a] rounded-br-full ">
+      <div className="flex flex-row max-w-9xl mx-auto items-center justify-center py-36 ">
       <div className="relative z-20   ">
-            <div className=" flex flex-col  justify-start mx-6  space-y-6 mt-16 md:mt-0  ">
+            <div className=" flex flex-col  justify-start mx-12  space-y-6 mt-16 md:mt-0  ">
               <motion.div
               initial={{opacity:0}}
 
@@ -242,8 +242,8 @@ const Home = () => {
               transition={{duration:2.5 }}
 
 
-               className="  text-5xl md:text-6xl  font-bold   text-white w-full   ">
-             <span className="text-transparent  bg-clip-text bg-gradient-to-r from-theme-secondary to-pink-600"> Custom</span> Web solutions Focused on your Business Success{" "}
+               className="  text-5xl md:text-6xl  font-extrabold   text-white max-w-7xl   ">
+             <span className="text-transparent  bg-clip-text bg-gradient-to-r from-theme-secondary to-pink-600"> Custom</span> Web solutions Focused on your Business{" "}
                 <Typical
                   className="text-[2rem]    pt-3"
                   steps={[
@@ -266,7 +266,7 @@ const Home = () => {
               animate={{opacity:1}}
             transition={{duration:2.5}}
               
-              className="   text-white">
+              className="   text-white max-w-4xl">
                 SoftLeaf Applications help you bring your product and idea to
                 life - whether it's a Minimum Viable Product, UX/UI Services or
                 general help to scale your business.
@@ -284,7 +284,7 @@ const Home = () => {
             </div> 
           </div>
 
-          <div  className="hidden md:flex relative z-40 w-[95rem] h-[40.625rem]  "> <Image layout="fill" className="w-full h-full object-cover" src={hero_banner}></Image></div>
+          <div  className="hidden md:flex relative z-40 w-[95rem] h-[40.625rem] max-w-7xl   "> <Image layout="fill" className="w-full h-full object-cover" src={hero_banner}></Image></div>
       </div>
           
         
@@ -325,7 +325,7 @@ const Home = () => {
               </div>
              
             </div>
-            <div className="flex md:flex-row md:mx-auto px-2 md:px-12 md:space-x-12 flex-col  mx-6 space-y-12 md:space-y-0">
+            <div className="flex md:flex-row md:mx-auto md:px-12 md:space-x-12 flex-col  mx-4 space-y-12 md:space-y-0">
               {solutions?.map((solution, idx) => {
                 return (
                
