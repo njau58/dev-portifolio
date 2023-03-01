@@ -68,7 +68,7 @@ const Header = ({
       <nav
         className={`${navbg} fixed w-[100%] top-0 z-50 py-6 ${navBorderBottom}  `}
       >
-        <div className="flex items-center max-w-7xl  justify-between md:px-12 mx-auto">
+        <div className="flex items-center md:mx-32  justify-between  ">
           
 
          <Logo colorNavChange={colorNavChange} mobileMenuLogo={mobileMenuLogo}></Logo>           

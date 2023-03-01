@@ -106,8 +106,8 @@ const WebDesign = () => {
         </div>
       </section>
 
-      <section className=" py-9">
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-12 md:space-y-0  my-9 mx-auto">
+      {/* <section className=" py-9">
+        <div className="flex flex-col md:flex-row justify-center  items-center space-y-12 md:space-y-0  my-9">
           <div className="flex flex-col space-y-4 items-center justify-center max-w-lg mx-4 md:mx-auto">
             <div className="font-extrabold text-2xl text-slate-800 text-center">
               Improve your brand value by our creative and unique UI/UX design
@@ -120,18 +120,43 @@ const WebDesign = () => {
               our client’s business goals and vision. We create innovative and
               most appealing user experiences that grabs user attention.
             </p>
-            {/* <button
-              onClick={contactModalToggle}
-              className="md:py-3 md:px-6  px-4 py-2  rounded-lg bg-[#711B8A] text-sm  text-white cursor-pointer hover:bg-amber-500 md:mx-6 "
-            >
-              Get A free UI/UX consultation{" "}
-            </button> */}
-
+           
 <Button onClick={contactModalToggle} label="Get A free UI/UX consultation " extra="px-12 py-3 "></Button>
                 
           </div>
 
-          <div className=" max-w-lg ">
+          <div className=" max-w-lg  flex  ">
+            {" "}
+            <Zoom>
+              {" "}
+              <Image src={mobile_ux1} alt="ui/ux"></Image>
+            </Zoom>
+          </div>
+        </div>
+      </section> */}
+
+      
+<section className="pt-12">
+        
+        <div className="flex flex-col md:flex-row justify-center mx-6 md:space-x-16 items-center space-y-12 md:space-y-0  my-9">
+          <div className="flex flex-col space-y-4 items-start ">
+          <div className="font-extrabold text-2xl text-slate-800 text-center max-w-lg">
+              Improve your brand value by our creative and unique UI/UX design
+              solutions
+            </div>
+
+            <p className="text-slate-600 leading-7 text-sm md:text-base pb-6 max-w-lg text-center mx-4 md:mx-auto">
+              {" "}
+              We craft amazing and responsive user experience designs that meet
+              our client’s business goals and vision. We create innovative and
+              most appealing user experiences that grabs user attention.
+            </p>
+           
+
+            <Button onClick={contactModalToggle} label="Get A free UI/UX consultation " extra="px-12 py-3 mx-auto "></Button>
+          </div>
+
+          <div className=" max-w-lg flex  ">
             {" "}
             <Zoom>
               {" "}

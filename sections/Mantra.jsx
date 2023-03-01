@@ -4,7 +4,7 @@ import {FaHeart, FaQuoteRight} from 'react-icons/fa'
 const Mantra = () => {
   return (
     <section className="bg-mobile-development-dot1  bg-repeat   ">
-          <div className="flex flex-col space-y-16 md:space-y-0 md:flex-row justify-center items-center md:mx-6 mx-2 py-12   ">
+          <div className="flex flex-col space-y-16 md:space-y-0 md:flex-row justify-center items-center md:mx-32 mx-2 py-12   ">
             <div className="flex flex-col space-y-4 justify-center ml-6 mt-12">
               <div className="text-slate-700 font-thin text-3xl md:text-4xl">
                 {" "}

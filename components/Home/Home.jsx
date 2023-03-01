@@ -231,10 +231,10 @@ const Home = () => {
             </motion.button>
           </AnimatePresence>
         )}
-    <section className=" relative  bg-fixed    bg-gradient-to-b to-[#11345a] from-[#5258fb] via-[#11345a] rounded-br-full ">
-      <div className="flex flex-row max-w-9xl mx-auto items-center justify-center py-36 ">
+    <section className=" relative  bg-fixed    bg-gradient-to-b to-[#11345a] from-[#5258fb] via-[#11345a] rounded-br-full  ">
+      <div className="flex flex-row max-w-9xl  md:mx-32 items-center justify-center py-36 ">
       <div className="relative z-20   ">
-            <div className=" flex flex-col  justify-start mx-12  space-y-6 mt-16 md:mt-0  ">
+            <div className=" flex flex-col  justify-start   space-y-6 mt-16 md:mt-0  ">
               <motion.div
               initial={{opacity:0}}
 

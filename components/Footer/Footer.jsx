@@ -11,7 +11,7 @@ const Footer = ({ show }) => {
     <>
       {show && (
         <footer className="bg-theme-dark-blue">
-          <div className=" flex flex-col justify-start ml-4 max-w-7xl mx-auto pt-6 space-y-12 md:space-y-0 md:ml-auto md:flex-row md:justify-around">
+          <div className=" flex flex-col justify-start  md:mx-32 mx-auto pt-6 space-y-12 md:space-y-0 md:ml-auto md:flex-row md:justify-around">
             <div className="flex flex-col space-y-2">
               <div className="text-slate-50 font-semibold ">Quick Links</div>
 
