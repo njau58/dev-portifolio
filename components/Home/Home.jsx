@@ -234,7 +234,7 @@ const Home = () => {
     <section className=" relative  bg-fixed    bg-gradient-to-b to-[#11345a] from-[#5258fb] via-[#11345a] rounded-br-full  ">
       <div className="flex flex-row max-w-9xl  md:mx-32 items-center justify-center py-36 ">
       <div className="relative z-20   ">
-            <div className=" flex flex-col  justify-start   space-y-6 mt-16 md:mt-0  ">
+            <div className=" flex flex-col  md:justify-start justify-center items-center md:items-start mx-8   space-y-6 mt-16 md:mt-0  ">
               <motion.div
               initial={{opacity:0}}
 
@@ -243,7 +243,7 @@ const Home = () => {
 
 
                className="  text-5xl md:text-6xl  font-extrabold   text-white max-w-7xl   ">
-             <span className="text-transparent  bg-clip-text bg-gradient-to-r from-theme-secondary to-pink-600"> Custom</span> Web solutions Focused on your Business{" "}
+             <span className="text-transparent  bg-clip-text bg-gradient-to-r from-theme-secondary to-pink-600 text-center"> Custom</span> Web solutions Focused on your Business{" "}
                 <Typical
                   className="text-[2rem]    pt-3"
                   steps={[
