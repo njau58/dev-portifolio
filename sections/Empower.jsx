@@ -13,7 +13,7 @@ const Empower = () => {
   };
 
   return (
-    <section className=" mx-auto md:mx-32 md:p-12 my-12">
+    <section className=" mx-8 md:mx-32 md:p-12 my-12">
     <div className="flex flex-col items-center  justify-center space-y-9 md:space-y-0 md:flex-row    ">
       <div className="flex flex-col max-w-xl  items-center justify-center py-12  bg-theme-primary    ">
         <div className="text-center font-bold mx-9 text-white text-2xl my-12 md:mx-24">
