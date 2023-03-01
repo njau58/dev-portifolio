@@ -43,7 +43,7 @@ const GrowTogether = () => {
 
 
             onClick={quoteModalToggle}
-            className="  px-6 py-3 z-40 bg-black hover:border-[1px]  hover:border-white text-white font-bold text-sm rounded-lg shadow-2xl hover md:hover:bg-transparent md:hover:text-theme-primary md:hover:border-theme-primary
+            className="  px-6 py-3 z-40 bg-theme-primary hover:border-[1px]  hover:border-theme-primary text-white font-bold text-sm rounded-lg shadow-2xl hover hover:bg-transparent hover:text-theme-primary 
             animate-bounce "
           >
             Get a cost estimate today
