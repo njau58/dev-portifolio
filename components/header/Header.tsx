@@ -14,7 +14,7 @@ const Header = () => {
   };
 
 
-  const handleOnClick = () =>{
+  const sendMessage = () =>{
     
   }
   return (
@@ -25,7 +25,7 @@ const Header = () => {
 
         <div className="hidden md:flex">
           <Button
-          handleOnclick={handleOnClick}
+          handleOnclick={sendMessage}
             label="Contact Me"
             labelColor="text-white"
             backGround="bg-primary-color"
