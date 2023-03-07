@@ -7,7 +7,7 @@ interface Props {
   backGround: string;
   hover:string;
   border?:string;
-  handleOnclick:()=>void
+  handleOnclick?:()=>void
 
 }
 
