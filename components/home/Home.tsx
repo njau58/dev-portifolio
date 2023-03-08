@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import Header from "../header/Header";
 import Hero from "../sections/Hero";
 import Expertise from '../sections/Expertise'
+import Projects from '../sections/Projects'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <Hero/>
       <Expertise/>
+      <Projects/>
     </div>
   );
 };

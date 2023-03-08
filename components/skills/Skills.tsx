@@ -52,10 +52,10 @@ const skills:Props[]=[
 
 
 const Skills = () => {
-   return <div className='grid gap-y-12 md:grid-cols-3 mx-auto'  >{
+   return <div className='grid gap-y-12 md:grid-cols-3 '  >{
  skills.map((item, idx)=>{
 
-    return(<Skill icon={item.icon} description={item.description} skill={item.skill}/>)
+    return(<Skill key={item.skill} icon={item.icon} description={item.description} skill={item.skill}/>)
 
 })
 }
