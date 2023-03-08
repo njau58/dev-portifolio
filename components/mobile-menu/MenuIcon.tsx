@@ -14,14 +14,14 @@ const MenuIcon = ({ toggle, setToggle }:Props) => {
     <div className="flex md:hidden z-50 relative">
       {toggle ? (
         <div
-          className="text-3xl text-gray-500 ease-out duration-500"
+          className="text-4xl text-gray-500 ease-out duration-500"
           onClick={setToggle}
         >
           <BiMenuAltRight></BiMenuAltRight>
         </div>
       ) : (
         <div
-          className="text-3xl text-gray-500 ease-out duration-500"
+          className="text-4xl text-gray-500 ease-out duration-500"
           onClick={setToggle}
         >
           <MdOutlineCancel></MdOutlineCancel>

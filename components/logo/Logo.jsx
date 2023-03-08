@@ -11,7 +11,7 @@ const Logo = () => {
 <Image
           src={logoImage}
           alt="Logo"
-          width={100}
+          width={150}
           height={100}
           className=" object-contain cursor-pointer"
         ></Image>

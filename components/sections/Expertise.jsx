@@ -13,7 +13,7 @@ const Expertise = () => {
         <span className="border-b-4 border-primary-color w-12 mx-auto"></span>
       </div>
 
-      <div className="flex flex-col md:flex-row mt-32 mx-auto space-y-12">
+      <div className="flex flex-col md:flex-row mt-32 mx-auto space-y-12 md:space-x-32">
         <Skills />
         <div className="flex  justify-end md:max-w-lg">
         <Image src={expertise} height={1500} className="object-contain"></Image>
