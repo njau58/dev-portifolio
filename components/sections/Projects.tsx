@@ -1,13 +1,14 @@
 
 import React from 'react'
 import {aiWeb,webAgency,realEstate} from '../../assets/assets'
+import CustomLink from '../links/CustomLink'
 import Project from './Project'
 
   interface Props {
     projectName:string,
     projectDescription:string,
     projectImage:any,
-    projectLink:string
+    projectLink:any
   }
 
 
@@ -40,7 +41,7 @@ const projects:Props[]=[
 
 const Projects = () => {
   return (
-    <div className='flex flex-col mt-48 '>
+    <div className='flex flex-col mt-48  items-center justify-center space-y-12'>
 
          <div className="flex flex-col space-y-4">
         <h1 className="text-center mx-auto  font-bold text-2xl text-secondary-text-color ">
@@ -58,7 +59,7 @@ const Projects = () => {
       })}
 </div>
     
-
+<CustomLink href='https//:github.com/njau58' linkStyles='border-2 border-primary-color bg-primary-color text-white py-2 px-4 text-base font-normal hover:bg-white hover:ease-in-out hover:duration-300 hover:text-primary-color hover:border-2 hover:border-primary-color' label='View More'></CustomLink>
 
     </div>
   )

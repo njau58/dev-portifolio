@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Button from "../button/Button";
+import CustomLink from "../links/CustomLink";
+import { LinkProps } from "next/link";
 
 interface Props {
   projectName: string;
   projectDescription: string;
   projectImage: string;
-  projectLink:string
+  projectLink:LinkProps
   
 }
 
@@ -31,14 +33,7 @@ const Project = ({ projectDescription, projectName, projectImage,projectLink }: 
         </div>
 
    <div className="flex justify-start ">
-   <Button
-          label="View Resume"
-          backGround="bg-white"
-          borderRadius="none"
-          labelColor="text-primary-color"
-          hover=" hover:bg-primary-color hover:ease-in-out hover:duration-300 hover:text-white"
-          border="border-2 border-primary-color"
-        ></Button>
+ <CustomLink href={projectLink} linkStyles=' border-2 border-primary-color bg-white text-primary-color py-2 px-4 text-base font-normal hover:bg-primary-color hover:ease-in-out hover:duration-300 hover:text-white hover:border-2 hover:border-primary-color' label='Visit website' />
    </div>
       </div>
     
