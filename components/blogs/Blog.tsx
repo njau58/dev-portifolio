@@ -7,19 +7,17 @@ const Blog = ({blogTitle, blogImage , blogUrl}:Props) => {
 
   
   return (
-    <div className='bg-blog-mvp bg-center bg-cover h-48 md:w-64 w-full  relative rounded-xl '>
-       <div className="h-full w-full absolute opacity-20 bg-primary-color rounded-xl">
-        
-       </div>
-       <div className="h-full flex items-center justify-center w-full absolute z-50 text-white">
-       {blogTitle}
-        
-       </div>
-    </div>
+   
 
+ <div className='bg-blog-mvp bg-center bg-cover  p-32 mx-12   relative rounded-xl '>
+ 
+ </div> 
 
     
   )
 }
 
 export default Blog
+
+
+

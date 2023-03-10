@@ -6,37 +6,36 @@ import Slider from "react-slick";
 
 const snap = () => {
 
-    var settings = {
+   
+
+      const settings = {
         dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2,
+    
+        scrollbars:true,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        swipeToSlide:true,
-        variableWidth:true
+        autoplay: true,
+        speed: 2500,
+        autoplaySpeed: 5000,
+        cssEase: "linear",
       };
+    
 
     return(
-        <div className="mx-auto">
-        <Slider {...settings} className="">
-          <div className='bg-red-500 flex items-center justify-center mx-32'>
-            <h3>1</h3>
+        <div className="mx-auto bg-black">
+        <Slider {...settings} className="flex fle">
+         
+          
+          <div className='bg-red-500 p-32'>
+            
           </div>
-          <div className='bg-blue-500 mx-32'>
-            <h3>2</h3>
+          <div className='bg-blue-500 p-32'>
+            
+            </div>
+            <div className='bg-yellow-900 p-32'>
+            
           </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+        
         </Slider>
         </div>
       );
