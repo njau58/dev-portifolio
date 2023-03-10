@@ -7,7 +7,7 @@ import Skills from "../skills/Skills";
 const Expertise = () => {
   return (
     <div className="flex flex-col mt-48  ">
-     <SectionHeading label="Modern Technology Stack and Areas of Expertise"/>
+     <SectionHeading label="The future of creation is expertise "/>
 
       <div className="flex flex-col md:flex-row mt-32 mx-auto space-y-12 space-x-10">
         <Skills />
