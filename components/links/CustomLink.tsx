@@ -1,6 +1,6 @@
 import React from "react";
-import Link, { LinkProps } from "next/link";
-import { Url } from "url";
+import Link from "next/link";
+
 
 
 interface Props {
@@ -13,11 +13,11 @@ interface Props {
 const CustomLink = ({ href, linkStyles,label }: Props) => {
   return (
     <div  > 
-      <Link href={href}>
+      <Link href={`${href}`}>
         <a target="_blank"  className={`${linkStyles}`} >{label}</a>
       </Link>
     </div>
   );
 };
 
-export default CustomLink;
+export default CustomLink; 

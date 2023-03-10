@@ -24,7 +24,7 @@ const Hero = () => {
             Hello,
           </span>
           <span className="text-primary-text-color font-bold text-7xl ">
-            I'm <span className=" text-transparent  bg-clip-text bg-gradient-to-r from-primary-color to-secondary-color">Simon</span> 
+            I'm <span className=" text-transparent  bg-clip-text bg-gradient-to-r from-pink-500 to-primary-color">Simon</span> 
           </span>{" "}
         </div>
 

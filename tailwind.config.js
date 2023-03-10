@@ -25,6 +25,8 @@ module.exports = {
     //  }),
 
      backgroundImage:{
+      "blog-mvp":"url('../assets/images/mvp.jpg')"
+     
     
   
      },

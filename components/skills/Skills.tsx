@@ -46,13 +46,24 @@ const skills:Props[]=[
         skill:'TailwindCSS',
         description:'The technological revolution is changing aspect',
         icon:<SiTailwindcss/>
+    },
+    {
+        skill:'TailwindCSS',
+        description:'The technological revolution is changing aspect',
+        icon:<SiTailwindcss/>
+    },  {
+        skill:'TailwindCSS',
+        description:'The technological revolution is changing aspect',
+        icon:<SiTailwindcss/>
     }
+
+
 
 ]
 
 
 const Skills = () => {
-   return <div className='grid gap-y-12 md:grid-cols-3 '  >{
+   return <div className='grid gap-y-12 md:grid-cols-4 '  >{
  skills.map((item, idx)=>{
 
     return(<Skill key={item.skill} icon={item.icon} description={item.description} skill={item.skill}/>)
