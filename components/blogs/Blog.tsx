@@ -18,7 +18,7 @@ const Blog = ({ blogTitle, blogUrl,blogExcerpt }: Props) => {
 
       <div className="h-full flex flex-col space-y-8 items-center justify-center  w-full absolute z-30 text-white">
         <div className="text-xl font-semibold">{blogTitle}</div>
-        <span className="text-sm text-left mx-2">
+        <span className="text-sm text-center mx-2">
         {blogExcerpt}
         </span>
       </div>

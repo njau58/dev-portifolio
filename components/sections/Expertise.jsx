@@ -7,13 +7,15 @@ import Skills from "../skills/Skills";
 const Expertise = () => {
   return (
     <div className="flex flex-col mt-48  ">
-     <SectionHeading label="The future of creation is expertise "/>
+      <div className="flex flex-row space-x-2 mb-24 md:mb-auto  ">
+        <div className="text-primary-color text-sm px-8 py-2 border-1 border-primary-color rounded-full bg-[#5258fb] bg-opacity-10">
+        Tech Stack
+        </div>
+      </div>
+      <SectionHeading label="The future of creation is expertise " />
 
       <div className="flex flex-col md:flex-row mt-32 mx-auto space-y-12 space-x-10">
         <Skills />
-        {/* <div className="flex  justify-end md:max-w-lg">
-        <Image src={expertise} height={1500} className="object-contain"></Image>
-      </div> */}
       </div>
     </div>
   );
