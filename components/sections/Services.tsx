@@ -32,13 +32,13 @@ const services: Props[] = [
 
 const Services = () => {
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="flex mt-24 flex-row space-x-2 mb-12 ">
+    <div className="max-w-7xl mx-auto ">
+      <div className="flex mt-24 flex-row space-x-2  ">
         <div className="text-primary-color text-sm px-8 py-2 border-1 border-primary-color rounded-full bg-[#5258fb] bg-opacity-10">
           My Advantage
         </div>
       </div>
-      <div className="flex items-center justify-center bg-white md:rounded-lg md:shadow-2xl md:py-6 max-w-5xl mx-auto md:px-6">
+      <div className="flex items-center justify-center bg-white md:rounded-lg md:shadow-2xl md:py-6 max-w-5xl mx-auto md:px-6 mt-12">
         <div className="flex flex-col space-y-12 md:space-y-0 md:space-x-12 md:flex-row">
           {services.map((item, index) => {
             return (

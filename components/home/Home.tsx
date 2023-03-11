@@ -5,9 +5,10 @@ import Expertise from '../sections/Expertise'
 import Projects from '../sections/Projects'
 import BlogSection from '../sections/BlogSection'
 import Services from "../sections/Services";
+import OpenSourceProjects from "../sections/OpenSourceProjects";
 
 const Home = () => {
-  return (
+  return (<>
     <div className="md:px-32 px-8 mx-auto">
       <Header />
       <Hero/>
@@ -15,7 +16,11 @@ const Home = () => {
       <Expertise/>
       <Projects/>
       <BlogSection/>
+  
     </div>
+
+    <OpenSourceProjects/>
+    </>
   );
 };
 
