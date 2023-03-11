@@ -4,7 +4,7 @@ import Blogs from '../../components/blogs/Blogs'
 
 const Blog = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-48 space-y-8 pb-48">
+    <div className="flex flex-col items-center justify-center pt-24 mt-24 space-y-8 pb-48">
       <SectionHeading label="Blogs" />
       <p className="text-center mx-auto max-w-xl">
         {" "}
