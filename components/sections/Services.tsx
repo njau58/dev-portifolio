@@ -32,8 +32,8 @@ const services: Props[] = [
 
 const Services = () => {
   return (
-    <div className="max-w-7xl mx-auto ">
-      <div className="flex mt-24 flex-row space-x-2  ">
+    <div className="max-w- mx-auto ">
+      <div className="flex flex-start mt-24 flex-row space-x-2  ">
         <div className="text-primary-color text-sm px-8 py-2 border-1 border-primary-color rounded-full bg-[#5258fb] bg-opacity-10">
           My Advantage
         </div>

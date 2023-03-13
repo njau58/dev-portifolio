@@ -10,7 +10,7 @@ const SectionHeading = ({label}:Props) => {
     <h1 className="text-center mx-auto  font-bold text-3xl text-primary-text-color max-w-lg ">
     {label}
     </h1>
-    <span className="border-b-4 border-primary-color w-12 mx-auto"></span>
+    <span className="border-b-4 border-primary-color border-opacity-40 w-24 rounded-lg mx-auto"></span>
   </div>
   )
 }

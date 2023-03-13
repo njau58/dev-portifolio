@@ -42,7 +42,7 @@ const settings = {
 
 const Blogs = () => {
   return (
-<div className="  w-full max-w-4xl   ">
+<div className="  w-full max-w-4xl    ">
     <Slider {...settings} >
       {blogs?.map((item, idx) => {
         return <Blog blogExcerpt={item.blogExcerpt} blogUrl={item.blogUrl}  blogTitle={item.blogTitle}/>;

@@ -5,7 +5,8 @@ import webAgency from './images/web-agency.png'
 import realEstate from './images/real-estate.png'
 import aiWeb from './images/ai-web.png'
 import mvp from './images/mvp.jpg'
+import profile1 from './images/profile1.jpg'
 
 
 
-export {logoImage,heroBanner,expertise,webAgency,realEstate,aiWeb, mvp}
+export {logoImage,heroBanner,expertise,webAgency,realEstate,aiWeb, mvp, profile1}
