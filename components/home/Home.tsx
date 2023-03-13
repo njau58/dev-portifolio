@@ -9,6 +9,7 @@ import OpenSourceProjects from "../sections/OpenSourceProjects";
 import Testimonials from "../sections/Testimonials";
 import CTA from "../sections/CTA";
 import Contact from '../sections/Contact'
+import Footer from "../footer/Footer";
 
 const Home = () => {
   return (
@@ -29,7 +30,8 @@ const Home = () => {
         
         <CTA />
       </div>
-      <div className="md:px-32 px-8 mx-auto"> <Contact/></div>
+      <div className="md:px-32 px-8 mx-auto"> <Contact/>
+      <Footer/></div>
     </>
   );
 };
