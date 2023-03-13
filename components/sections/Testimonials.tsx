@@ -60,7 +60,7 @@ const Testimonials = () => {
 
 
   return (
-    <div className="  mx-auto mt-48 pb-32 ">
+    <div className="  mx-auto mt-48  ">
            <div className="mb-8"><SectionHeading label="What clients had to say  " /></div> 
       <Slider {...settings}>
         {" "}

@@ -15,7 +15,7 @@ import {AiFillStar} from 'react-icons/ai'
 
 const Testimonial = ({testimonialImage,testimonialMessage, testimonialPerson,testimonialRating}) => {
   return (
-    <div className="bg-white flex flex-row items-center justify-center md:m-8 p-8 mx-4   rounded-lg shadow-xl space-x-4 md:max-w-xl  md:mx-auto ">
+    <div className="bg-white flex flex-row items-center justify-center m-8 p-16 mx-4   rounded-lg shadow-xl space-x-4 md:max-w-xl  md:mx-auto ">
       <div className="rounded-full">
         <Image
           src={testimonialImage}

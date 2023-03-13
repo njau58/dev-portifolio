@@ -7,6 +7,7 @@ import BlogSection from "../sections/BlogSection";
 import Services from "../sections/Services";
 import OpenSourceProjects from "../sections/OpenSourceProjects";
 import Testimonials from "../sections/Testimonials";
+import CTA from "../sections/CTA";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <Testimonials/>
 
       </div>
+      <div className="md:px-32 px-8 mx-auto"> <CTA/> </div>
     </>
   );
 };
