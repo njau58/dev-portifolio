@@ -38,7 +38,7 @@ const Services = () => {
           My Advantage
         </div>
       </div>
-      <div className="flex items-center justify-center bg-white md:rounded-lg md:shadow-2xl md:py-6 max-w-5xl mx-auto md:px-6 mt-12">
+      <div className="flex items-center justify-center bg-white md:rounded-lg md:shadow-lg border-[1px]  py-16 max-w-5xl mx-auto md:px-6 mt-12">
         <div className="flex flex-col space-y-12 md:space-y-0 md:space-x-12 md:flex-row">
           {services.map((item, index) => {
             return (

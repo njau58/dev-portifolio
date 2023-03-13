@@ -4,7 +4,7 @@ import Button from "../button/Button";
 const CTA = () => {
   const sendMessage = () => {};
   return (
-    <div className="mt-48 pb-32">
+    <div className="mt-48 ">
       <div className=" relative  bg-white  rounded-2xl py-24 px-8 shadow-2xl space-y-8 max-w-8xl mx-auto overflow-clip ">
         <div className="absolute p-8 bg-gradient-to-tr from-primary-color to-[#b8bafa] top-0 left-0 rounded-br-[50%] rounded-tl-3xl"></div>
         <div className="bg-gradient-to-tr from-primary-color to-[#b8bafa] p-6 rounded-full absolute  -bottom-11 -right-11 ">
