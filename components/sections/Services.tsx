@@ -2,6 +2,7 @@ import React from "react";
 import { FaLaptopCode } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { TbSeo } from "react-icons/tb";
+import SectionHeading from "../sectionHeading/SectionHeading";
 
 interface Props {
   service: string;
@@ -32,13 +33,15 @@ const services: Props[] = [
 
 const Services = () => {
   return (
-    <div className="max-w- mx-auto ">
-      <div className="flex flex-start mt-24 flex-row space-x-2  ">
-        <div className="text-primary-color text-sm px-8 py-2 border-1 border-primary-color rounded-full bg-[#5258fb] bg-opacity-10">
-          My Advantage
+    <div className="max-w- mx-auto mt-48 ">
+      <div className="flex items-center justify-center  mx-auto mb-8 ">
+        <div className="text-primary-color text-sm font-bold">
+      What I Offer
         </div>
+      
       </div>
-      <div className="flex items-center justify-center bg-white md:rounded-lg md:shadow-lg border-[1px]  py-16 max-w-5xl mx-auto md:px-6 mt-12">
+      <SectionHeading label="Services" />
+      <div className="flex items-center justify-center bg-white md:rounded-lg md:shadow-lg md:border-[1px]  py-16 max-w-5xl mx-auto md:px-6 mt-12">
         <div className="flex flex-col space-y-12 md:space-y-0 md:space-x-12 md:flex-row">
           {services.map((item, index) => {
             return (

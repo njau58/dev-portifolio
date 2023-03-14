@@ -9,7 +9,7 @@ const Contact = () => {
 
     const sendMessage = () =>{}
   return (
-    <div className="mt-48 pb-32">
+    <div id="contact" className="mt-48 pb-32">
       <div className="mb-8">
         <SectionHeading label="Get In Touch  " />
       </div>

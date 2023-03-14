@@ -7,10 +7,11 @@ import Skills from "../skills/Skills";
 const Expertise = () => {
   return (
     <div className="flex flex-col mt-48  ">
-      <div className="flex flex-row space-x-2 mb-24 md:mb-auto  ">
-        <div className="text-primary-color text-sm px-8 py-2 border-1 border-primary-color rounded-full bg-[#5258fb] bg-opacity-10">
-        Tech Stack
+     <div className="flex items-center justify-center  mx-auto mb-8 ">
+        <div className="text-primary-color text-sm font-bold">
+      Tech Stack
         </div>
+      
       </div>
       <SectionHeading label="The future of creation is expertise " />
 

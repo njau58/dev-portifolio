@@ -61,7 +61,16 @@ const Testimonials = () => {
 
   return (
     <div className="  mx-auto mt-48  ">
-           <div className="mb-8"><SectionHeading label="What clients had to say  " /></div> 
+
+           <div className="mb-8">
+           <div className="flex items-center justify-center  mx-auto mb-8 ">
+        <div className="text-primary-color text-sm font-bold">
+    Testimonials
+        </div>
+      
+      </div>
+            <SectionHeading label="What clients had to say  " /></div> 
+
       <Slider {...settings}>
         {" "}
         {testimonials?.map((item, index) => {

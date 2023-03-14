@@ -15,8 +15,6 @@ const Header = () => {
     setToggle((prev) => !prev);
   };
 
-  const sendMessage = () => {};
-
   //setting shadow on header on scrolling 400px Y-axis
 
   const setStyle = () => {
@@ -40,17 +38,22 @@ const Header = () => {
             : "h-28 bg-white top-0 ease-in-out delay-75  flex flex-row justify-between items-center  mx-auto z-40 fixed  w-full md:px-32 px-8 "
         }`}
       >
-        <Logo />
+         <Logo />
         <NavLinks desktopStyles="flex-row items-center just space-x-16 text-primary-text-color font-semibold cursor-pointer hidden md:flex" />
 
         <div className="hidden md:flex">
-       <Link href="#projects" scroll={false} ><a className="border-2 border-primary-color bg-primary-color text-white py-2 px-4 text-base font-normal  hover:bg-white hover:ease-in-out hover:duration-300 hover:text-primary-color hover:border-2 hover:border-primary-color">Contact Me</a></Link>
-        </div>
-
-        <MenuIcon toggle={toggle} setToggle={handleToggle}></MenuIcon>
+          <Link href="#contact" scroll={false}>
+            <a className="border-[1px] border-primary-color bg-primary-color text-white py-2 px-4 text-small font-normal  hover:bg-white hover:ease-in-out hover:duration-300 hover:text-primary-color  hover:border-primary-color">
+              Contact Me
+            </a>
+          </Link>
+        </div> 
+        
+        <MenuIcon toggle={toggle} setToggle={handleToggle}></MenuIcon> 
+   
       </div>
-
-      <Menu toggle={toggle}></Menu>
+      <Menu toggle={toggle} setToggle={handleToggle}></Menu>
+    
     </>
   );
 };

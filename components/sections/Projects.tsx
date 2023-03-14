@@ -46,16 +46,17 @@ console.log(moreProjectsLink[0].moreProjectsLink);
 
 const Projects = () => {
   return (
-    <div id="projects" className="flex flex-col mt-48   space-y-12">
- <div className="flex  flex-row space-x-2  ">
-        <div className="text-primary-color text-sm px-8 py-2 border-1 border-primary-color rounded-full bg-[#5258fb] bg-opacity-10">
-        Projects
+    <div id="projects" className="flex flex-col mt-48   space-y-8">
+<div className="flex items-center justify-center  mx-auto  ">
+        <div className="text-primary-color text-sm font-bold">
+     Projects
         </div>
+      
       </div>
       
       <SectionHeading label="Take a Look at My Work" />
 
-      <div className=" mt-32 flex flex-col space-y-24 mx-auto">
+      <div className=" mt-0 flex flex-col space-y-24 mx-auto">
         {" "}
         {projects?.map((item, idx) => {
           return (

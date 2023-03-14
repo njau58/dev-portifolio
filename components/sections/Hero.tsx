@@ -12,12 +12,12 @@ const Hero = () => {
         
     }
   return (
-    <div className="flex flex-col max-w-7xl md:flex-row items-center  justify-center mx-auto space-y-12 mt-32 ">
+    <div className="flex flex-col max-w-7xl md:flex-row items-center  justify-center mx-auto space-y-12 md:mt-32 mt-44 ">
       <div className="flex flex-col items-start justify-start space-y-6 max-w-2xl">
         <div className="flex flex-row justify-center space-x-2">
           <span className="border-b-2 h-3 w-3  border-primary-color"></span>
 
-          <div className="text-primary-color text-sm">Bespoke Solutions</div>
+          <div className="text-primary-color text-sm font-bold">Get Bespoke Solutions</div>
         </div>
         <div className="flex flex-col space-y-2">
           <span className="font-semibold text-5xl text-primary-text-color">
