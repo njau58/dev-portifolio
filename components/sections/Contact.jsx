@@ -44,14 +44,14 @@ const Contact = () => {
             <div className="mb-6 w-full">
               <label
                 for="email"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                className="block mb-2 text-sm font-medium text-primary-text-color dark:text-white"
               >
                 Your email
               </label>
               <input
                 type="email"
                 id="email"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm block w-full p-2.5 "
+                class="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 "
                 placeholder="name@company.com"
                 required
               />
@@ -59,35 +59,35 @@ const Contact = () => {
             <div className="mb-6 w-full">
               <label
                 for="subject"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                className="block mb-2 text-sm font-medium text-primary-text-color dark:text-white"
               >
                 Subject (OPTIONAL)
               </label>
               <input
                 type="text"
                 id="subject"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm block w-full p-2.5 "
-                placeholder="Web App"
+                class="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 "
+                placeholder="Custom Website"
               />
             </div>
           </div>
           <div className="mb-6">
             <label
               for="message"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-primary-text-color dark:text-white"
             >
               Your message
             </label>
             <textarea
               id="message"
               rows="4"
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50  border border-gray-300 "
-              placeholder="Write your thoughts here..."
+              className="block p-2.5 w-full text-sm text-primary-text-color bg-white  border border-gray-300 "
+              placeholder="Write your message here..."
             ></textarea>
           </div>
           <Button
           handleOnclick={sendMessage}
-            label="Contact Me"
+            label="Send Message"
             labelColor="text-white"
             backGround="bg-primary-color"
             borderRadius="rounded-none"

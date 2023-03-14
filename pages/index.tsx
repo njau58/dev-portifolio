@@ -5,6 +5,7 @@ import HomeComponent from "../components/home/Home";
 const Home: NextPage = () => {
   return (
     <>
+      
       <HomeComponent />
     </>
   );

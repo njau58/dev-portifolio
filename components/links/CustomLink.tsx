@@ -13,7 +13,7 @@ interface Props {
 const CustomLink = ({ href, linkStyles,label }: Props) => {
   return (
     <div  > 
-      <Link href={`${href}`}>
+      <Link href={`${href}`}  >
         <a target="_blank"  className={`${linkStyles}`} >{label}</a>
       </Link>
     </div>
