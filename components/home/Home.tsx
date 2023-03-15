@@ -12,6 +12,8 @@ import Contact from "../sections/Contact";
 import Footer from "../footer/Footer";
 
 import ScrollToTop from "../scrollToTop/ScrollToTop";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
   const [showTopButton, setShowButton] = useState<boolean>(false);
@@ -52,6 +54,19 @@ const Home = () => {
         <Contact />
         <Footer />
       </div>
+
+      <ToastContainer
+position="bottom-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="colored"
+/>
     </>
   );
 };

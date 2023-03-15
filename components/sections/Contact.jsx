@@ -1,13 +1,72 @@
-import React from "react";
+import React, { FC,useState } from "react";
 import SectionHeading from "../sectionHeading/SectionHeading";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
 import Button from "../button/Button";
+import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contact = () => {
 
-    const sendMessage = () =>{}
+
+  const [ formData, setFormData] = useState({
+    email:'',
+    message:'',
+    subject:''
+
+  })
+
+
+
+  const handleOnchange = (e) =>{
+
+    setFormData({...formData,[e.target.name]:e.target.value})
+
+
+  }
+
+
+console.log(formData)
+
+  const sendMessage =(e)=>{
+
+    e.preventDefault()
+
+
+    axios.post('/api/sendMessage', formData)
+    .then(result=>{
+
+      if(result){
+        toast.success('😊Message sent!', {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
+      }
+
+    })
+    .catch(error=>console.log(err))
+
+    
+
+  }
+
+
+
+
+
+
+
+
+
   return (
     <div id="contact" className="mt-48 pb-32">
       <div className="mb-8">
@@ -50,10 +109,11 @@ const Contact = () => {
               </label>
               <input
                 type="email"
-                id="email"
-                class="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 "
+                name="email"
+                className="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 "
                 placeholder="name@company.com"
                 required
+                onChange={handleOnchange}
               />
             </div>
             <div className="mb-6 w-full">
@@ -65,9 +125,10 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                id="subject"
-                class="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 "
+                name="subject"
+                className="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 "
                 placeholder="Custom Website"
+                onChange={handleOnchange}
               />
             </div>
           </div>
@@ -79,19 +140,21 @@ const Contact = () => {
               Your message
             </label>
             <textarea
-              id="message"
+              name="message"
               rows="4"
-              className="block p-2.5 w-full text-sm text-primary-text-color bg-white  border border-gray-300 "
+              className="block p-2.5 w-full text-sm text-primary-text-color bg-white focus:border-red-500  border border-gray-300 "
               placeholder="Write your message here..."
+              required
+              onChange={handleOnchange}
             ></textarea>
           </div>
           <Button
-          handleOnclick={sendMessage}
+            handleOnclick={sendMessage}
             label="Send Message"
             labelColor="text-white"
             backGround="bg-primary-color"
             borderRadius="rounded-none"
-            hover="hover:border-primary-color hover:border-2 hover:bg-white hover:text-primary-color hover:ease-in-out hover:duration-700"
+            hover="hover:border-primary-color hover:border-[1px] hover:bg-white hover:text-primary-color hover:ease-in-out hover:duration-300"
           />
         </form>
       </div>

@@ -6,8 +6,8 @@ const CTA = () => {
   return (
     <div className="mt-48 ">
       <div className=" relative  bg-white  rounded-2xl py-24 px-8 shadow-2xl space-y-8 max-w-7xl mx-auto overflow-clip ">
-        <div className="absolute p-8 bg-gradient-to-tr from-primary-color to-[#b8bafa] top-0 left-0 rounded-br-[50%] rounded-tl-3xl"></div>
-        <div className="bg-gradient-to-tr from-primary-color to-[#b8bafa] p-6 rounded-full absolute  -bottom-11 -right-11 ">
+        <div className="absolute p-8 bg-gradient-to-tr from-primary-color to-[#d8daff] top-0 left-0 rounded-br-[50%] rounded-tl-3xl"></div>
+        <div className="bg-gradient-to-tr from-primary-color to-[#d8daff] p-6 rounded-full absolute  -bottom-11 -right-11 ">
           {" "}
           <div className=" border-[42px] border-white rounded-full   "></div>
         </div>

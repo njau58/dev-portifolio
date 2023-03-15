@@ -11,7 +11,7 @@ const Blog = () => {
         </div>
       
       </div>
-    <div className="flex justify-center items-center flex-col space-y-8">  <SectionHeading label="Sharing My Experiences Along the Way" />
+    <div className="flex justify-center items-center flex-col space-y-8">  <SectionHeading label="Sharing Experiences Along the Way" />
       <p className="text-center mx-auto max-w-xl pb-16">
         {" "}
         The technological revolution is changing aspect of our lives, and the

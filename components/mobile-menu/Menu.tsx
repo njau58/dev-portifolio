@@ -2,6 +2,7 @@ import React from 'react'
 import NavLinks from '../header/NavLinks'
 import Link from 'next/link'
 import {MdOutlineCancel} from 'react-icons/md'
+import {motion, AnimatePresence} from 'framer-motion'
 
 interface Props{
   toggle:boolean,
@@ -12,8 +13,16 @@ interface Props{
 const Menu = ({toggle,setToggle}:Props) => {
   return (
     <>
+<AnimatePresence>
+    <motion.div
 
-    <div className={`${toggle?'hidden':"md:hidden h-screen flex w-full   fixed z-50 top-0   bg-white flex-col font-semibold text-gray-700 rounded-sm pb-8 items-start px-8"}`}>
+initial={{ x: "100" }}
+animate={{ x: 0 }}
+transition={{ type: "spring", stiffness: 100 }}
+
+
+    
+    className={`${toggle?'hidden':"md:hidden h-screen flex w-full   fixed z-50 top-0   bg-white flex-col font-semibold text-gray-700 rounded-sm pb-8 items-start px-8"}`}>
     <div
           className="text-4xl text-gray-500 ease-out duration-500 right-8 top-8 absolute"
           onClick={setToggle}
@@ -29,7 +38,8 @@ const Menu = ({toggle,setToggle}:Props) => {
           </Link>
 
 
-    </div></>
+    </motion.div>
+    </AnimatePresence></>
   )
 }
 
