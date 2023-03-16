@@ -3,10 +3,9 @@ import SectionHeading from "../sectionHeading/SectionHeading";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
-import Button from "../button/Button";
 import axios from "axios";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
@@ -15,6 +14,7 @@ const Contact = () => {
     message: "",
     subject: "",
   });
+
   const ACTIONS = {
     CALL_API: "call-api",
     SUCCESS: "success",
@@ -55,9 +55,7 @@ const Contact = () => {
   const [state, dispatch] = useReducer(sendMessageReducer, initialState);
   const { messageData, loading, error } = state;
 
-  // const handleOnchange = (e) => {
-  //   setFormData({ ...formData, [e.target.name]: e.target.value });
-  // };
+  
 
   const sendMessage = (formData) => {
     // e.preventDefault();
@@ -110,8 +108,8 @@ const Contact = () => {
 
       <div className="flex flex-col md:flex-row justify-center md:space-x-32 space-y-24 md:space-y-0 mt-16">
         <div className="flex flex-col space-y-4 justify-start">
-          <div className="text-primary-text-color text-2xl font-light">
-            Let’s Work <span className="text-secondary-color">Together</span>
+          <div className="text-primary-text-color text-2xl font-light max-w-xs mb-8">
+            Let’s Talk About Your Next Amazing <span className="text-secondary-color font-bold text-3xl">Project</span>
           </div>
           <div className="flex flex-row space-x-4 items-center w-full">
             <div className="text-xl text-primary-color">

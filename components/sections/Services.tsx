@@ -14,19 +14,20 @@ const services: Props[] = [
   {
     service: "Web Development",
     description:
-      "The technological revolution is changing aspect The technological revolution is changing aspect",
+      `
+       I deliver fast, reliable, secure and scalable application within your budget and the given deadline.`,
     icon: <FaLaptopCode />,
   },
   {
     service: "UI/UX Design",
     description:
-      "The technological revolution is changing aspect The technological revolution is changing aspect",
+      "Get well crafted, innovative and responsive user experience design solutions.",
     icon: <FiFigma />,
   },
   {
     service: "SEO",
     description:
-      "The technological revolution is changing aspect The technological revolution is changing aspect",
+      "I use modern web tech to ensure excellent ranking for websites as far as SEO is concerned. More leads equals to more sales.",
     icon: <TbSeo />,
   },
 ];

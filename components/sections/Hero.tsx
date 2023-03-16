@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { heroBanner } from "../../assets/assets";
-import Button from "../button/Button";
+import Link from "next/link";
 
 const Hero = () => {
 
@@ -29,29 +29,17 @@ const Hero = () => {
         </div>
 
         <p className="text-left">
-          Since beginning my journey as a freelance designer nearby 7 years ago,
-          I 've done remote work for agencies, consulted for startup, and
-          collaborated with talented people to create digital products.
+          Since beginning of my journey as software developer nearby 3 years ago,
+          I 've done remote work for agencies, consulted for startups, and
+          collaborated with talented people to create digital products.With my natural inclination towards frontend development, I'm  constantly pushing the limits of modern web development.
         </p>
 
         <div className="flex flex-start justify-between space-x-12">
-          <Button
-            label="Lets Talk"
-            backGround="bg-primary-color"
-            borderRadius="none"
-            labelColor="text-white"
-            hover=" hover:bg-white hover:ease-in-out hover:duration-300 hover:text-primary-color hover:border-2 hover:border-primary-color"
-            handleOnclick={contactMe}
-          ></Button>
-          <Button
-            label="View Resume"
-            backGround="bg-white"
-            borderRadius="none"
-            labelColor="text-primary-color"
-            hover=" hover:bg-primary-color hover:ease-in-out hover:duration-300 hover:text-white"
-            border="border-2 border-primary-color"
-            handleOnclick={viewResume}
-          ></Button>
+        <Link href="#contact" scroll={false}>
+            <a className="border-[1px] border-primary-color bg-primary-color text-white py-2 px-4 text-small font-normal  hover:bg-white hover:ease-in-out hover:duration-300 hover:text-primary-color  hover:border-primary-color">
+              Let's Talk
+            </a>
+          </Link>
         </div>
       </div>
 
