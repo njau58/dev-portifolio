@@ -1,46 +1,94 @@
-import React, { FC,useState } from "react";
+import React, { FC, useReducer, useState } from "react";
 import SectionHeading from "../sectionHeading/SectionHeading";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import { AiFillPhone } from "react-icons/ai";
 import Button from "../button/Button";
-import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    message: "",
+    subject: "",
+  });
+  const ACTIONS = {
+    CALL_API: "call-api",
+    SUCCESS: "success",
+    ERROR: "error",
+  };
 
+  const sendMessageReducer = (state, action) => {
+    switch (action.type) {
+      case ACTIONS.CALL_API: {
+        return {
+          ...state,
+          loading: true,
+        };
+      }
+      case ACTIONS.SUCCESS: {
+        return {
+          ...state,
+          loading: false,
+          messageData: action.data,
+        };
+      }
+      case ACTIONS.ERROR: {
+        return {
+          ...state,
+          loading: false,
+          error: action.error,
+        };
+      }
+    }
+  };
 
-  const [ formData, setFormData] = useState({
-    email:'',
-    message:'',
-    subject:''
+  const initialState = {
+    messageData: {},
+    loading: false,
+    error: null,
+  };
 
-  })
+  const [state, dispatch] = useReducer(sendMessageReducer, initialState);
+  const { messageData, loading, error } = state;
 
+  const handleOnchange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
+  console.log(initialState);
 
-  const handleOnchange = (e) =>{
+  const sendMessage = (e) => {
+    e.preventDefault();
 
-    setFormData({...formData,[e.target.name]:e.target.value})
+    dispatch({ type: ACTIONS.CALL_API });
+    axios
+      .post("/api/sendMessage", formData)
+      .then((response) => {
+        setFormData({})
+        if (response.status === 200) {
+          dispatch({ type: ACTIONS.SUCCESS, data: response.data });
+          toast.success("Message sent succesfully.", {
+            position: "bottom-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
 
+       
 
-  }
-
-
-console.log(formData)
-
-  const sendMessage =(e)=>{
-
-    e.preventDefault()
-
-
-    axios.post('/api/sendMessage', formData)
-    .then(result=>{
-
-      if(result){
-        toast.success('😊Message sent!', {
+          return;
+        }
+      })
+      .catch((error) => {
+        dispatch({ type: ACTIONS.ERROR, error: error.error, loading: false });
+        toast.error("Oops! An Error occured.", {
           position: "bottom-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -49,23 +97,9 @@ console.log(formData)
           draggable: true,
           progress: undefined,
           theme: "dark",
-          });
-      }
-
-    })
-    .catch(error=>console.log(err))
-
-    
-
-  }
-
-
-
-
-
-
-
-
+        });
+      });
+  };
 
   return (
     <div id="contact" className="mt-48 pb-32">
@@ -148,9 +182,10 @@ console.log(formData)
               onChange={handleOnchange}
             ></textarea>
           </div>
+
           <Button
             handleOnclick={sendMessage}
-            label="Send Message"
+            label={`${loading ? "Please wait..." : "Send Message"}`}
             labelColor="text-white"
             backGround="bg-primary-color"
             borderRadius="rounded-none"
