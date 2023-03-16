@@ -3,7 +3,7 @@
 export default function sendMessage(req, res) {
     let nodemailer = require("nodemailer");
     require("dotenv").config();
-    let MAILER_PASS = process.env.NEXT_PUBLIC_MAILER_PSS;
+    let MAILER_PASS = process.env.NEXT_PUBLIC_MAILER_PASS;
 
 
   const { email, subject, message } = req.body;
