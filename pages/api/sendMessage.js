@@ -3,12 +3,16 @@
 export default function sendMessage(req, res) {
     let nodemailer = require("nodemailer");
     require("dotenv").config();
-    let MAILER_PASS = process.env.NEXT_PUBLIC_MAILER_PASS;
+    let MAILER_PASS = process.env.NEXT_PUBLIC_MAILER_PSS;
 
 
   const { email, subject, message } = req.body;
 
   console.log(req.body)
+
+//   if(!email||!message){
+//     res.status(401).end({error:'email and message must be filled.'})
+//   }
 
   const transporter = nodemailer.createTransport({
     host: "gra109.truehost.cloud",
