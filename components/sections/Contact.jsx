@@ -169,7 +169,7 @@ const Contact = () => {
                   <Field
                     type="email"
                     name="email"
-                    className="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 "
+                    className="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 focus:text-gray-700 focus:bg-white focus:border-primary-color focus:outline-none"
                     placeholder="name@company.com"
                   />
                   <ErrorMessage
@@ -188,7 +188,7 @@ const Contact = () => {
                   <Field
                     type="text"
                     name="subject"
-                    className="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 "
+                    className="bg-white border border-gray-300 text-primary-text-color text-sm block w-full p-2.5 focus:text-gray-700 focus:bg-white focus:border-primary-color focus:outline-none "
                     placeholder="Custom Website"
                   />
                   <ErrorMessage
@@ -209,7 +209,7 @@ const Contact = () => {
                   as="textarea"
                   name="message"
                   rows="4"
-                  className="block p-2.5 w-full text-sm text-primary-text-color bg-white  border border-gray-300 "
+                  className="block p-2.5 w-full text-sm text-primary-text-color bg-white  border border-gray-300  focus:text-gray-700 focus:bg-white focus:border-primary-color focus:outline-none"
                   placeholder="Write your message here..."
                 />
                 <ErrorMessage

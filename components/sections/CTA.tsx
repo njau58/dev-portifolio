@@ -1,8 +1,9 @@
 import React from "react";
-import Button from "../button/Button";
+import Link from "next/link";
+import {BsFillArrowDownCircleFill} from 'react-icons/bs'
 
 const CTA = () => {
-  const sendMessage = () => {};
+
   return (
     <div className="mt-48 ">
       <div className=" relative  bg-white  rounded-2xl py-24 px-8 shadow-2xl space-y-8 max-w-7xl mx-auto overflow-clip ">
@@ -19,14 +20,11 @@ const CTA = () => {
           <div className="text-center max-w-lg">
             Reach out to me. Lets Discuss your ideas. Leave the rest to me, I will bring it to life.
           </div>
-          <Button
-            handleOnclick={sendMessage}
-            label="Contact Me"  
-            labelColor="text-white"
-            backGround="bg-primary-color"
-            borderRadius="rounded-none"
-            hover="hover:border-primary-color hover:border-2 hover:bg-white hover:text-primary-color hover:ease-in-out hover:duration-700"
-          />
+          <Link href="#contact" scroll={false}>
+            <a className="border-[1px] border-primary-color bg-primary-color text-white py-2 px-4 text-small font-normal  ">
+            Get a Quote<span className="inline-block pl-2 text-white animate-bounce ease-in-out"><BsFillArrowDownCircleFill></BsFillArrowDownCircleFill></span>
+            </a>
+          </Link>
         </div>
       </div>
     </div>
