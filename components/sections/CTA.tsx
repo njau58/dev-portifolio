@@ -16,14 +16,12 @@ const CTA = () => {
           <div className="text-center mx-auto  font-bold text-3xl text-primary-text-color max-w-lg ">
             Lets Work Together
           </div>
-          <div className="text-center max-w-xl">
-            The technological revolution is changing aspect of our lives, and
-            the fabric of society itself. it's also changing the way we learn
-            and what we learn
+          <div className="text-center max-w-lg">
+            Reach out to me. Lets Discuss your ideas. Leave the rest to me, I will bring it to life.
           </div>
           <Button
             handleOnclick={sendMessage}
-            label="Contact Me"
+            label="Contact Me"  
             labelColor="text-white"
             backGround="bg-primary-color"
             borderRadius="rounded-none"

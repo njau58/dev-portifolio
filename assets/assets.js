@@ -6,7 +6,9 @@ import realEstate from './images/real-estate.png'
 import aiWeb from './images/ai-web.png'
 import mvp from './images/mvp.jpg'
 import profile1 from './images/profile1.jpg'
+import apex from './images/peter.jpg'
+import rent254 from './images/rent254.png'
 
 
 
-export {logoImage,heroBanner,expertise,webAgency,realEstate,aiWeb, mvp, profile1}
+export {logoImage,heroBanner,expertise,webAgency,realEstate,aiWeb, mvp, profile1,apex,rent254}

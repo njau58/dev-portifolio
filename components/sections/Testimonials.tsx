@@ -1,11 +1,11 @@
 import React from "react";
 import Testimonial from "../testimonial/Testimonial";
-import { profile1 } from "../../assets/assets";
+import { profile1,rent254, apex } from "../../assets/assets";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import SectionHeading from "../sectionHeading/SectionHeading";
-// import {Props} from '../../components/testimonial/Testimonial'
+
 
 export interface Props {
   testimonialPerson: string;
@@ -16,29 +16,27 @@ export interface Props {
 
 const testimonials: Props[] = [
   {
-    testimonialPerson: "Casandra",
-    testimonialMessage: `We believe creators are the new generation of entrepreneurs. Movig was built to empower creators to turn their passion into scalable businesses`,
+    testimonialPerson: "Casandra, CEO Digitec Afrika",
+    testimonialMessage: `Simon is an incredibly talented web developer who provided an amazing level of knowledge and expertise while working on a complex web development project.
+     he was able to quickly understand and implement complex tasks, take the lead on the project, and go the extra mile to ensure its success. Highly recommended.`,
     testimonialImage: profile1,
     testimonialRating: 5,
   },
   {
-    testimonialPerson: "Casandra",
-    testimonialMessage: `We believe creators are the new generation of entrepreneurs. Movig was built to empower creators to turn their passion into scalable businesses`,
-    testimonialImage: profile1,
-    testimonialRating: 2,
+    testimonialPerson: "    Peter, Engineer Lead Apex Surveyors",
+    testimonialMessage: `Simon provided an excellent customer service and quality work while creating a new website for our business.
+     He is knowledgeable, patient and kept us informed throughout the process, resulting in a beautiful website that we are proud of.`,
+    testimonialImage: apex,
+    testimonialRating: 5,
   },
   {
-    testimonialPerson: "Casandra",
-    testimonialMessage: `We believe creators are the new generation of entrepreneurs. Movig was built to empower creators to turn their passion into scalable businesses`,
-    testimonialImage: profile1,
-    testimonialRating: 2,
+    testimonialPerson: "Bundi, CTO Rent254",
+    testimonialMessage: `
+    Simon provided an excellent service in developing a real estate website that met the company's requirements. His work was well designed, clean, and well-structured, and he kept the company informed of progress at all times.`,
+    testimonialImage: rent254,
+    testimonialRating: 5,
   },
-  {
-    testimonialPerson: "Casandra",
-    testimonialMessage: `We believe creators are the new generation of entrepreneurs. Movig was built to empower creators to turn their passion into scalable businesses`,
-    testimonialImage: profile1,
-    testimonialRating: 2,
-  },
+
 ];
 
 
@@ -52,7 +50,7 @@ const Testimonials = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2500,
+    speed: 3000,
     autoplaySpeed: 5000,
     cssEase: "linear",
   };
@@ -71,7 +69,8 @@ const Testimonials = () => {
       </div>
             <SectionHeading label="What clients had to say  " /></div> 
 
-      <Slider {...settings}>
+   <div className="py-4">
+   <Slider {...settings}>
         {" "}
         {testimonials?.map((item, index) => {
           return (
@@ -83,7 +82,7 @@ const Testimonials = () => {
             />
           );
         })}
-      </Slider>
+      </Slider></div>   
     </div>
   );
 };

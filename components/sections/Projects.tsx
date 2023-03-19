@@ -18,22 +18,19 @@ const projects: Props[] = [
     projectName: "Web Development Agency ",
     projectLink: "https://softleafapplications.com",
     projectImage: webAgency,
-    projectDescription: `Since beginning my journey as a freelance designer nearby 7 years ago, I 've done remote work for agencies, 
-    consulted for startup, and collaborated with talented people to create digital products.`,
+    projectDescription: `Modern landing page for a web development agency. SEO optimized,responsive with a blog system baked in. `,
   },
   {
     projectName: "Real Estate Agency ",
     projectImage: realEstate,
-    projectLink: "https://softleafapplications.com",
-    projectDescription: `Since beginning my journey as a freelance designer nearby 7 years ago, I 've done remote work for agencies, 
-    consulted for startup, and collaborated with talented people to create digital products.`,
+    projectLink: "https://www.254rent.com/",
+    projectDescription: `One stop shop for houses, apartments for commercial and rental. Saves users upto 90%  time of house hunting `,
   },
   {
-    projectName: "AI WebApp",
+    projectName: "AI-powered Web Application",
     projectImage: aiWeb,
-    projectLink: "https://softleafapplications.com",
-    projectDescription: `Since beginning my journey as a freelance designer nearby 7 years ago, I 've done remote work for agencies, 
-    consulted for startup, and collaborated with talented people to create digital products.`,
+    projectLink: "https://ai-items-description-generator.vercel.app/",
+    projectDescription: `Running out of catchy description while posting your items for sale online? Not to worry. This AI powered tool comes in handy`,
   },
 ];
 

@@ -5,6 +5,7 @@ import {IoLogoJavascript} from 'react-icons/io'
 import {FiFigma} from 'react-icons/fi'
 import {AiFillHtml5} from 'react-icons/ai'
 import {SiTailwindcss} from 'react-icons/si'
+import { SiRedux,SiMongodb} from 'react-icons/si'
 import Skill from './Skill'
 
 
@@ -19,42 +20,42 @@ interface Props{
 const skills:Props[]=[
     {
         skill:'Javascript',
-        description:'The technological revolution is changing aspect',
+        description:'A programming language used to add interactivity and dynamic behavior to websites.',
         icon:<IoLogoJavascript/>
     },
     {
         skill:'ReactJS',
-        description:'The technological revolution is changing aspect',
+        description:'AJavaScript library for building user interfaces for creating fast and interactive web applications.',
         icon:<DiReact/>
     },
     {
         skill:'NextJS',
-        description:'The technological revolution is changing aspect',
+        description:' A reactjs framework for creating server-rendered applications.',
         icon:<SiNextdotjs/>
     },
     {
         skill:'Figma',
-        description:'The technological revolution is changing aspect',
+        description:'A design tool used for creating user interfaces and prototypes.',
         icon:<FiFigma/>
     },
     {
         skill:'HTML5',
-        description:'The technological revolution is changing aspect',
+        description:'Latest version of HTML that describes the stracture of a webpage',
         icon:<AiFillHtml5/>
     },
     {
         skill:'TailwindCSS',
-        description:'The technological revolution is changing aspect',
+        description:'A utility-first CSS framework to style web components',
         icon:<SiTailwindcss/>
     },
     {
-        skill:'TailwindCSS',
-        description:'The technological revolution is changing aspect',
-        icon:<SiTailwindcss/>
+        skill:'Redux',
+        description:'State management library for react applications',
+        icon:<SiRedux/>
     },  {
-        skill:'TailwindCSS',
-        description:'The technological revolution is changing aspect',
-        icon:<SiTailwindcss/>
+        skill:'MongoDB',
+        description:'MongoDB is a document-oriented NoSQL database used to store and query data.',
+        icon:<SiMongodb/>
     }
 
 

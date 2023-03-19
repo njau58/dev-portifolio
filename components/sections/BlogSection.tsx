@@ -14,9 +14,7 @@ const Blog = () => {
     <div className="flex justify-center items-center flex-col space-y-8">  <SectionHeading label="Sharing Experiences Along the Way" />
       <p className="text-center mx-auto max-w-xl pb-16">
         {" "}
-        The technological revolution is changing aspect of our lives, and the
-        fabric of society itself. it's also changing the way we learn and what
-        we learn
+        Web technologies are evolving by day. To adjust and catch up with the latest trends, insights on the same comes in helpful.
       </p>
 
       <Blogs /></div>

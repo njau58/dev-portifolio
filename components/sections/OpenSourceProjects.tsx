@@ -19,8 +19,8 @@ const projects: Props[] = [
     titleStyles: "font-bold text-white text-xl",
     buttonText: "Open App",
     excerptTitleStyle: "text-slate-200",
-    projectTitle: `Find Hotels finder`,
-    projectExcerpt: ` but you also need a quick response when opportunities arise...
+    projectTitle: `Find Hotels around you`,
+    projectExcerpt: `See hotels/restaurants around you, wherever you are on the globe...
    `,
     projectUrl: "https://tour-guided.vercel.app/",
   },
@@ -31,7 +31,7 @@ const projects: Props[] = [
     buttonText: "View more",
     excerptTitleStyle: "text-slate-400",
     projectTitle: `Open-Source Projects`,
-    projectExcerpt: ` but you also need a quick response when opportunities arise...
+    projectExcerpt: `See documented projects on github version control system...
    `,
     projectUrl: "https://github.com/njau58",
   },
