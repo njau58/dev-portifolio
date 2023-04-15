@@ -8,7 +8,8 @@ import mvp from './images/mvp.jpg'
 import profile1 from './images/profile1.jpg'
 import apex from './images/peter.jpg'
 import rent254 from './images/rent254.png'
+import cart from './images/apex-cart.png'
 
 
 
-export {logoImage,heroBanner,expertise,webAgency,realEstate,aiWeb, mvp, profile1,apex,rent254}
+export {logoImage,heroBanner,expertise,webAgency,realEstate,aiWeb, mvp, profile1,apex,rent254,cart}

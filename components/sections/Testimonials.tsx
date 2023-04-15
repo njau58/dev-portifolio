@@ -69,12 +69,13 @@ const Testimonials = () => {
       </div>
             <SectionHeading label="What clients had to say  " /></div> 
 
-   <div className="py-4">
+   <div className="my-6">
    <Slider {...settings}>
         {" "}
         {testimonials?.map((item, index) => {
           return (
             <Testimonial
+          
               testimonialImage={item.testimonialImage}
               testimonialPerson={item.testimonialPerson}
               testimonialMessage={item.testimonialMessage}

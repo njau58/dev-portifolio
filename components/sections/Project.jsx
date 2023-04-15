@@ -3,19 +3,24 @@ import Image from "next/image";
 import CustomLink from "../links/CustomLink";
 import { LinkProps } from "next/link";
 
-interface Props {
-  projectName: string;
-  projectDescription: string;
-  projectImage: string;
-  projectLink: LinkProps;
-}
+// interface Props {
+//   projectName: string;
+//   projectDescription: string;
+//   projectImage: string;
+//   projectLink: LinkProps;
+// }
 
 const Project = ({
   projectDescription,
   projectName,
   projectImage,
   projectLink,
-}: Props) => {
+  tech
+}) => {
+
+
+
+
   return (
     <>
       <div className="flex flex-col md:flex-row space-y-16  mx-auto md:space-x-24 max-w-7xl">
@@ -27,7 +32,11 @@ const Project = ({
             className="object-contain"
           ></Image>
         </div>
+       
         <div className=" flex flex-col space-y-4  justify-center ">
+      
+          <div className="flex flex-row space-x-6">{tech.map(item=><div className="bg-primary-color bg-opacity-20 text-primary-color px-2 py-2 rounded-2xl text-xs text-center">{item}</div>)}</div>
+        
           <div className="flex flex-row  space-x-2">
             <span className="border-b-2 h-3 w-3  border-primary-color"></span>
 
