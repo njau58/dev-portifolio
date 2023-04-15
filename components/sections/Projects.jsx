@@ -26,7 +26,7 @@ const projects = [
     projectName: "Online checkout System ",
     projectLink: "https://apexcart.vercel.app/survey&measuringEquipments",
     projectImage: cart,
-    tech:['Nexjs', 'TalwindCSS', 'Redux Toolkit', 'Redux Persist', 'WhatsApp Business API'],
+    tech:['Nexjs', 'TalwindCSS', 'Redux Toolkit', 'Redux Persist', 'WhatsApp API'],
     projectDescription: `Built with redux-toolkit, redux-persit, nextjs and other modern technologies, the online store lets client for apex surveyors view and place orders for equipments seamelessly. `,
   },
 
