@@ -35,7 +35,7 @@ const Project = ({
        
         <div className=" flex flex-col space-y-4  justify-center ">
       
-          <div className="flex flex-row md:space-x-6 space-x-2 ">{tech.map(item=><div className="bg-primary-color bg-opacity-20 text-primary-color px-2 py-2 rounded-full text-xs text-center">{item}</div>)}</div>
+          <div className="grid grid-cols-4 gap-x-2 gap-y-2 ">{tech.map(item=><div className="bg-primary-color bg-opacity-20 text-primary-color px-1 py-2 w-full rounded-full text-xs text-center">{item}</div>)}</div>
         
           <div className="flex flex-row  space-x-2">
             <span className="border-b-2 h-3 w-3  border-primary-color"></span>
