@@ -34,7 +34,7 @@ const Header = () => {
       <div
         className={`${
           shadow
-            ? "shadow-lg h-20 ease-in-out delay-75  bg-white top-0 flex flex-row justify-between items-center z-40  mx-auto  fixed shadow- w-full md:px-32 px-8 "
+            ? "shadow-lg h-20 ease-in-out delay-75  bg-white bg-opacity-95 top-0 flex flex-row justify-between items-center z-40  mx-auto  fixed shadow- w-full md:px-32 px-8 "
             : "h-28 bg-white top-0 ease-in-out delay-75  flex flex-row justify-between items-center  mx-auto z-40 fixed  w-full md:px-32 px-8 "
         }`}
       >
@@ -43,7 +43,7 @@ const Header = () => {
 
         <div className="hidden md:flex">
           <Link href="#contact" scroll={false}>
-            <a className="border-[1px] border-primary-color bg-primary-color text-white py-2 px-4 text-small font-normal  hover:bg-white hover:ease-in-out hover:duration-300 hover:text-primary-color  hover:border-primary-color">
+            <a className="border-[1px] border-primary-color bg-primary-color text-white py-2 px-4 text-sm  hover:bg-white hover:ease-in-out hover:duration-300 hover:text-primary-color  hover:border-primary-color">
               Contact Me
             </a>
           </Link>

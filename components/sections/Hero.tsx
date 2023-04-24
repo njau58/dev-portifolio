@@ -36,7 +36,7 @@ const Hero = () => {
 
         <div className="flex flex-start justify-between space-x-12">
         <Link href="#contact" scroll={false}>
-            <a className="border-[1px] border-primary-color bg-primary-color text-white py-2 px-4 text-small font-normal  hover:bg-white hover:ease-in-out hover:duration-300 hover:text-primary-color  hover:border-primary-color">
+            <a className="border-[1px] border-primary-color bg-primary-color text-white py-2 px-4 text-sm font-normal  hover:bg-white hover:ease-in-out hover:duration-300 hover:text-primary-color  hover:border-primary-color">
               Let's Talk
             </a>
           </Link>
