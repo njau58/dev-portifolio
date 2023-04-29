@@ -1,6 +1,6 @@
 import React from "react";
 import Testimonial from "../testimonial/Testimonial";
-import { profile1,rent254, apex } from "../../assets/assets";
+import { profile1,nester, apex } from "../../assets/assets";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -33,7 +33,7 @@ const testimonials: Props[] = [
     testimonialPerson: "Mutunga, Nester Solar",
     testimonialMessage: `
     Simon provided an excellent service in developing company website that met the company's requirements. His work was well designed, clean, and well-structured, and he kept the company informed of progress at all times.`,
-    testimonialImage: rent254,
+    testimonialImage: nester,
     testimonialRating: 5,
   },
 
