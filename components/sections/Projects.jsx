@@ -30,13 +30,13 @@ const projects = [
     projectDescription: `Built with redux-toolkit, redux-persit, nextjs and other modern technologies, the online store lets client for apex surveyors view and place orders for equipments seamelessly. `,
   },
 
-  {
-    projectName: "Real Estate Agency ",
-    projectImage: realEstate,
-    tech:['Nexjs', 'ReactJS', 'TalwindCSS'],
-    projectLink: "https://www.254rent.com/",
-    projectDescription: `One stop shop for houses, apartments for commercial and rental. Saves users upto 90%  time of house hunting `,
-  },
+  // {
+  //   projectName: "Real Estate Agency ",
+  //   projectImage: realEstate,
+  //   tech:['Nexjs', 'ReactJS', 'TalwindCSS'],
+  //   projectLink: "https://www.254rent.com/",
+  //   projectDescription: `One stop shop for houses, apartments for commercial and rental. Saves users upto 90%  time of house hunting `,
+  // },
   {
     projectName: "AI-powered Web Application",
     projectImage: aiWeb,

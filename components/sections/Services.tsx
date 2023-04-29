@@ -49,7 +49,7 @@ const Services = () => {
               <div className="bg-white  md:shadow-none md:px-2 py-4 rounded-lg flex flex-col items-center justify-center space-y-4 md:rounded-none">
                 <div className=" border-gray-100 rounded-full p-4 border-8">
                   <div className=" bg-gray-100 rounded-full p-4">
-                    <div className="text-4xl text-primary-color">
+                    <div className="text-4xl text-sec-">
                       {item.icon}
                     </div>
                   </div>

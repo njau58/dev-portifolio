@@ -30,9 +30,9 @@ const testimonials: Props[] = [
     testimonialRating: 5,
   },
   {
-    testimonialPerson: "Bundi, CTO Rent254",
+    testimonialPerson: "Mutunga, Nester Solar",
     testimonialMessage: `
-    Simon provided an excellent service in developing a real estate website that met the company's requirements. His work was well designed, clean, and well-structured, and he kept the company informed of progress at all times.`,
+    Simon provided an excellent service in developing company website that met the company's requirements. His work was well designed, clean, and well-structured, and he kept the company informed of progress at all times.`,
     testimonialImage: rent254,
     testimonialRating: 5,
   },
