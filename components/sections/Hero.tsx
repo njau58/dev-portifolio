@@ -19,6 +19,7 @@ const Hero = () => {
 
           <div className="text-primary-color text-sm font-bold">Get Bespoke Solutions</div>
         </div>
+      
         <div className="flex flex-col space-y-2">
           <span className="font-semibold text-5xl text-primary-text-color">
             Hello,
